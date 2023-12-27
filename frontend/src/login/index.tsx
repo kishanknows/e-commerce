@@ -9,7 +9,7 @@ function LoginScreen(): JSX.Element {
   const navigation = useNavigation();
   function onContinue() {
     //@ts-ignore
-    navigation.navigate('OTP');
+    navigation.navigate('OTP', {contact: contact});
   }
   return (
     <SafeAreaView>
