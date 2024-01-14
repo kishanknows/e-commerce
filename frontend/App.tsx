@@ -21,7 +21,11 @@ function App(): JSX.Element {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="OTP" component={OTPScreen} />
         <Stack.Screen name="Profile" component={ProfileScreen} />
-        <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen
+          name="Search"
+          component={SearchScreen}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
